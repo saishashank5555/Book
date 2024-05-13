@@ -1,0 +1,290 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(120deg,rgba(255, 255, 0, 0.878),white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url('./loginBackgroundIMG.png'); */
+  
+}
+#imageContainer
+{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+   position: absolute;
+   z-index: -1;
+   overflow: hidden;   
+}
+.loginimg
+{
+    height: 6.5vw;
+    width: 8vw;
+}
+#img1
+{
+   position: absolute;
+   transform: rotate(10deg) rotateY(180deg);
+    filter: drop-shadow(3px 3px 1px black);
+   animation: book1 10s infinite both alternate ease-in-out;
+}
+#img2
+{
+   position: absolute;
+   right: 3vw;
+   filter: drop-shadow(3px 3px 1px black);
+   transform: rotate(10deg) rotateY(180deg);
+   animation: book2 15s infinite both alternate ease-in-out;
+
+}
+#img3
+{
+   position: absolute;
+   bottom: 2vw;
+   filter: drop-shadow(3px 3px 1px black);
+   transform: rotate(10deg) rotateY(180deg);
+   animation: book3 15s infinite both alternate ease-in-out;
+
+}
+#img4
+{
+   position: absolute;
+   right: 3vw;
+   bottom: 2vw;
+   filter: drop-shadow(3px 3px 1px black);
+   transform: rotate(10deg) rotateY(180deg);
+   animation: book2 20s infinite both alternate ease-in-out;
+
+}
+@keyframes book1 {
+    0%
+    {
+       transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%
+    {
+        transform: translate(400px,200px) rotateY(180deg);
+    }
+    50%
+    {
+        transform: translate(600px,-150px) rotateY(180deg);
+    }
+    75%
+    {
+        transform: translate(0px,650px) rotateY(180deg);
+    }
+    100%
+    {
+        transform: translate(600px,650px) rotateY(180deg);
+    }
+}
+@keyframes book2 {
+    0%
+    {
+       transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%
+    {
+        transform: translate(-400px,200px) rotateY(180deg);
+    }
+    50%
+    {
+        transform: translate(-600px,-150px) rotateY(180deg);
+    }
+    75%
+    {
+        transform: translate(0px,450px) rotateY(180deg);
+    }
+    100%
+    {
+        transform: translate(100px,350px) rotateY(180deg);
+    }
+}
+@keyframes book3 {
+    0%
+    {
+       transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%
+    {
+        transform: translate(400px,-200px) rotateY(180deg);
+    }
+    50%
+    {
+        transform: translate(600px,-150px) rotateY(180deg);
+    }
+    75%
+    {
+        transform: translate(0px,-450px) rotateY(180deg);
+    }
+    100%
+    {
+        transform: translate(100px,-350px) rotateY(180deg);
+    }
+}
+@keyframes book4 {
+    0%
+    {
+       transform: translate(0px,0px) rotateY(180deg);
+    }
+    25%
+    {
+        transform: translate(400px,200px) rotateY(180deg);
+    }
+    50%
+    {
+        transform: translate(600px,-150px) rotateY(180deg);
+    }
+    75%
+    {
+        transform: translate(0px,650px) rotateY(180deg);
+    }
+    100%
+    {
+        transform: translate(600px,650px) rotateY(180deg);
+    }
+}
+#mainContainer
+{
+    height: 25vw;
+    width: 30vw;
+    background-color: rgba(0, 0, 0, 0.431);
+    /* background-image: url('./loginBackgroundIMG.png'); */
+    /* filter: drop-shadow(4px 2px 1px black); */
+    box-shadow: 2px 2px 2px 1px black;
+    /* box-shadow: -2px -2px 2px white; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1vw;
+    position: absolute;
+    
+}
+#loginBackgroundIMG
+{
+    position: absolute;
+    height: 30vw;
+    width: 40vw;
+    z-index: -1;
+}
+#loginHeading
+{
+    font-size: 4vw;
+    color: white;
+}
+
+#email
+{
+    height: 5vh;
+    width: 25vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 0.1vw solid white;
+    color: white;
+    letter-spacing: 0.3vw;
+    text-align: center;
+
+    
+}
+#email::placeholder,#pass::placeholder
+{
+    color: white;
+    letter-spacing: 0.3vw;
+    text-align: center; 
+    font-size: 1.2vw;
+}
+#passwordContainer
+{
+    height: 5vh;
+    width: 25vw;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    border-bottom: 0.1vw solid white;
+    letter-spacing: 0.3vw;
+    text-align: center;
+
+   
+}
+#pass
+{
+    height: 3vw;
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 0.3vw;
+    text-align: center;
+
+   
+}
+#subm
+{
+    height: 3vw;
+    width: 80%;
+    background-color:lime;
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 0.2vw;
+    font-size: 2.3vw;
+    /* box-shadow: 3px 3px 3px 1px black; */
+
+}
+#subm:hover
+{
+    cursor: pointer;
+    animation: buttomanimation 1s infinite alternate;
+}
+@keyframes buttomanimation {
+    0%
+    {
+         transform: skew(0deg,0deg) rotate(0deg);
+    }
+    25%
+    {
+        transform: skew(20deg,0deg) rotate(10deg);
+    }
+    50%
+    {
+        transform: skew(0deg,20deg) rotate(-20deg);
+    }
+    75%
+    {
+        transform: skew(10deg,5deg) rotate(10deg);
+    }
+    100%
+    {
+        transform: skew(-10deg,-5deg) rotate(-5deg);
+    }
+
+}
+a
+{
+    color: white;
+    text-decoration: none;
+    
+}
+#subButton
+{
+    color: white;
+    text-decoration: none;
+    width: 20vw;
+    padding-left: 5vw;
+}
+#createAccount
+{
+    font-size: 2vw;
+}

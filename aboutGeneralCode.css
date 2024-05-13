@@ -1,0 +1,222 @@
+html{
+    scroll-behavior: smooth;
+}
+#containerFounder,#locationContainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(teal,black);
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+}
+#founderHeading,#locationHeading{
+    padding-top: 3vw;
+    width: 100%;
+    height:10vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5vw;
+    letter-spacing: 2vw;
+    font-family: "Sedan SC", serif;
+    color: white;
+}
+#founderInfo,#locationInfo{
+    width: 100%;
+    height: auto;
+    /* background-color: yellow; */
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+}
+#containerInfo,#containerImage,#locationMap,#locationAdd{
+    width: 500px;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: justify;
+    padding: 1vw;
+    text-indent: 3vw;
+    letter-spacing: 0.2vw;
+    word-spacing: 0.2vw;
+    line-height: 3vh;
+}
+.founderName{
+    font-family: "Sedan SC", serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 1vw;
+    padding: 2vw;
+    color: yellow;
+}
+.founderImage{
+    width: 20vw;
+    height: 20vw;
+    border-radius: 100%;
+    box-shadow: 2px 2px 2px black,0px 0px 0px yellow,0px 0px 0px red,0px 0px 0px blue;
+    /* animation: shadowAnimation 5s liear infinite both alternate; */
+    animation: shadowAnimation 4s linear infinite both alternate;
+}
+@keyframes shadowAnimation {
+    0%{
+        box-shadow: 2px 2px 2px black,20px 20px 20px yellow,-20px-20px 20px red,20px 20px 0px blue;
+    }
+    25%{
+        box-shadow: 2px 2px 2px black,-90px -90px 0px yellow,90px 90px 0px red,0px 20px 100px blue;
+    }
+    50%{
+        box-shadow: 2px 2px 2px black,-60px -60px 100px yellow,-60px 60px 100px red,-10px 0px 100px blue;
+    }
+    75%{
+        box-shadow: 2px 2px 2px black,-90px 60px 200px yellow,90px -60px 200px red,0px -10px 100px blue;
+    }
+    100%{
+        box-shadow: 2px 2px 2px black,0px 0px 0px yellow,0px 0px 0px red,0px -20px 100px blue;
+    } 
+}
+iframe{
+    width: 90%;
+    height: 30vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    position: relative;
+    z-index: 3;
+}
+#locationAdd{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    line-height: 3vw;
+
+}
+#locationContainer{
+    height: auto;
+    padding-bottom: 3vh;
+    position: relative;
+}
+
+nav
+{
+    width: 100%;
+    height: 40px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    z-index: 6;
+    /* background-color: red; */
+    
+}
+.mainlist1
+{
+    list-style: none;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: white; */
+}
+.sublist
+{
+    list-style: none;
+    position: relative;
+}
+.li2
+{
+    position: absolute;
+    bottom: -1vw;
+    right: -1vw;
+    background-color: red;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+}
+.li1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.li1:hover,.mainlist2:hover,a:hover
+{
+    color: black;
+    text-decoration: underline 0.2vw solid black;
+}
+.mainlist2{
+    list-style: none;
+    height: 2.5vw;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+    font-size: 1vw;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    top: 100px;
+    /* background-color: pink; */
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.li3
+{
+    position: absolute;
+    bottom: 3px;
+    right: 3vw;
+    /* background-color: red; */
+    font-size: 1.5vw;
+    padding-bottom: 0.5vw;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+footer
+{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(11, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+.footerList
+{
+    display: flex;
+    list-style: none;
+}
+.fli{
+    color: white;
+    text-decoration: none;
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.fli:hover
+{
+    color: skyblue;
+}
+.copy
+{
+    color: skyblue;
+    font-weight: bold;
+    padding-bottom: 14px;
+    /* background-color: red; */
+
+}
